@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Discover thoughtfully selected technology and everyday tech essentials at AHMADRAZA IT SOLUTIONS. Order conveniently through WhatsApp.">
+  <title>AHMADRAZA IT SOLUTIONS — Technology, Made Better</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="store.js" defer></script>
+</head>
+<body>
+  <div class="announcement">SMART TECHNOLOGY. THOUGHTFULLY SELECTED. <span>·</span> YOUR TECH, YOUR WAY.</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="AHMADRAZA IT SOLUTIONS home">
+      <span class="brand-mark">AR</span>
+      <span class="brand-words"><strong>AHMADRAZA</strong><small>IT SOLUTIONS</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#products">Shop</a><a href="#about">Our story</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="bag-button" id="open-cart" aria-label="Open shopping bag">Bag <span id="cart-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE NEXT GENERATION OF TECH</p>
+        <h1>Technology.<br>Made better.</h1>
+        <p class="hero-description">Discover thoughtfully selected electronics and everyday tech essentials, built around the way you live and work.</p>
+        <a class="button button-dark" href="#products">Explore collection <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 480 360" role="img">
+          <ellipse cx="250" cy="314" rx="190" ry="20" fill="#c9c6bd"/>
+          <g transform="translate(70 34) rotate(-7 140 130)">
+            <rect x="34" y="8" width="190" height="238" rx="11" fill="#b7b4ae"/>
+            <rect x="41" y="15" width="176" height="222" rx="6" fill="#292d30"/>
+            <rect x="48" y="22" width="162" height="208" rx="3" fill="#dce5e2"/>
+            <path d="M48 166Q94 107 128 143T210 100V230H48Z" fill="#82928a"/>
+            <path d="M48 190Q107 132 143 168T210 143V230H48Z" fill="#454f4b"/>
+            <path d="M48 207Q104 176 145 195T210 178V230H48Z" fill="#252e2a"/>
+            <circle cx="129" cy="30" r="2" fill="#727977"/>
+            <path d="M15 246H244L230 257H29Z" fill="#92918b"/>
+            <path d="M15 246H244L236 251H23Z" fill="#d1d0ca"/>
+          </g>
+          <g transform="translate(284 88) rotate(11 45 70)">
+            <rect x="0" y="0" width="88" height="150" rx="12" fill="#252728"/>
+            <rect x="4" y="4" width="80" height="142" rx="9" fill="#17191a"/>
+            <rect x="8" y="8" width="72" height="134" rx="7" fill="#a9b7ad"/>
+            <path d="M8 89Q30 42 45 78T80 48V142H8Z" fill="#546d5e"/>
+            <path d="M8 110Q39 77 55 99T80 81V142H8Z" fill="#263f32"/>
+            <rect x="33" y="13" width="22" height="5" rx="3" fill="#171919"/>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Store benefits">
+      <div><strong>Curated tech</strong><span>Everyday essentials</span></div>
+      <div><strong>Modern design</strong><span>Style meets function</span></div>
+      <div><strong>Customer first</strong><span>Here to help</span></div>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section-heading">
+        <div><p class="eyebrow muted">THE STORE</p><h2>Shop the collection</h2><p class="section-description">Find your next everyday essential.</p></div>
+        <span class="product-count" id="product-count">6 products</span>
+      </div>
+      <div class="shop-tools">
+        <div class="category-filters" id="category-filters" aria-label="Filter products">
+          <button class="filter active" data-category="All">All products</button>
+          <button class="filter" data-category="Computing">Computing</button>
+          <button class="filter" data-category="Accessories">Accessories</button>
+          <button class="filter" data-category="Audio">Audio</button>
+          <button class="filter" data-category="Mobile">Mobile</button>
+        </div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="product-search" type="search" placeholder="Search products…" aria-label="Search products"></label>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>No products match your search. Try another term or category.</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <p class="eyebrow muted">WHY AHMADRAZA IT SOLUTIONS</p>
+      <h2>A smarter way to shop for technology.</h2>
+      <p>We believe great technology should feel simple. Our goal is to help you discover useful tech, make confident choices, and find the right tools for your everyday life.</p>
+      <a class="button button-light" id="contact-cta" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-brand">AHMADRAZA IT SOLUTIONS</div>
+    <p>Technology for the way forward.</p>
+    <div class="footer-bottom"><span>© <span id="year"></span> AHMADRAZA IT SOLUTIONS</span><span>Thoughtfully selected tech essentials</span></div>
+  </footer>
+
+  <div class="overlay" id="cart-overlay" hidden>
+    <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+      <div class="cart-header"><h2 id="cart-title">Your bag <span id="drawer-count">(0)</span></h2><button class="close-button" id="close-cart" aria-label="Close shopping bag">×</button></div>
+      <div id="cart-items"></div>
+      <div id="cart-summary"></div>
+    </aside>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script>
+    // A small visible note helps shoppers understand this is a customizable starter store.
+  </script>
+</body>
+</html>
